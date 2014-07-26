@@ -142,6 +142,7 @@ $(document).ready(function() {
             // Use Ajax to submit form data
             $.post($form.attr('action'), $form.serialize(), function(result) {
                 $('#correcto').fadeIn();
+                 console.log(result);
             }, 'json');
         });
 
